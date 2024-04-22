@@ -2,16 +2,13 @@
 import inquirer from "inquirer";
 
 const currency : any = {
-PKR : 1,                //based currency
+PKR : 1,     //based currency
 USD : 0.0036,
 IND : 0.30,
 EUR : 0.0034,
 GBP : 0.0029,
 AUD : 0.0056,
 CAD : 0.0049,
-SEK : 0.039,
-NZD : 0.0061,
-MXN : 0.060
 };
 
 let user_answer = await inquirer.prompt
@@ -20,13 +17,14 @@ let user_answer = await inquirer.prompt
         name :"from",
         type : "list",
         message : "Enter  Your Currency You Want From Convert",
-        choices : ["PKR" , "USD" , "IND" , "EUR" , "GBP" , "AUD" , "CAD" , "SEK" , "NZD" , "MXN"]
+        choices : ["PKR" , "USD" , "IND" , "EUR" , "GBP" , "AUD" , "CAD"]
     },
     {
         name :"to",
         type : "list",
         message : "Enter Your Currency You Want To Convert",
-        choices : ["PKR" , "USD" , "IND" , "EUR" , "GBP", "AUD" , "CAD" , "SEK" , "NZD" , "MXN"]
+        choices : ["PKR" , "USD" , "IND" , "EUR" , "GBP", "AUD" , "CAD"
+        ]
     },
     {
         name :"amount",
