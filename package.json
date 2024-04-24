@@ -4,7 +4,7 @@
   "description": "It is a currency convertor game",
   "main": "index.js",
   "type": "module",
-  "bin": "main.js",
+  "bin": "index.js",
   "publishConfig": {
     "access": "public"
   },
